@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Poyecto_CitrIApp</string>
+    <string name="nombre_cultivo">Nombre Cultivo</string>
+    <string name="autor">Autor</string>
+</resources>

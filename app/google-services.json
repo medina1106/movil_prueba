@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "363642085319",
+    "firebase_url": "https://proyectocitriapp-default-rtdb.firebaseio.com",
+    "project_id": "proyectocitriapp",
+    "storage_bucket": "proyectocitriapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:363642085319:android:eb65ef6c48b47b7b14c3e2",
+        "android_client_info": {
+          "package_name": "com.medina.poyecto_citriapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "363642085319-m9m8jodr33mh9f8lgekce3ols8jn8osd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUdWtkcqjRoFiLuFf9cQC3coyDEjMYQTk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "363642085319-m9m8jodr33mh9f8lgekce3ols8jn8osd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

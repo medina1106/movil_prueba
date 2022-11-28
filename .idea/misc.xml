@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android Juliana/Poyecto_CitrIApp/app/src/main/res/layout/activity_agregar_cul.xml" value="0.31765711842667804" />
+        <entry key="..\:/Android Juliana/Poyecto_CitrIApp/app/src/main/res/layout/activity_cultivo_produ.xml" value="0.31765711842667804" />
+        <entry key="..\:/Poyecto_CitrIApp/app/src/main/res/drawable-v24/styleedttxt.xml" value="0.3045" />
+        <entry key="..\:/Poyecto_CitrIApp/app/src/main/res/drawable/buttologin.xml" value="0.25" />
+        <entry key="..\:/Poyecto_CitrIApp/app/src/main/res/drawable/stylebotton.xml" value="0.3045" />
+        <entry key="..\:/Poyecto_CitrIApp/app/src/main/res/drawable/styleedtalert.xml" value="0.3045" />
+        <entry key="..\:/Poyecto_CitrIApp/app/src/main/res/drawable/styleedttxt.xml" value="0.1125" />
+        <entry key="..\:/Poyecto_CitrIApp/app/src/main/res/layout/activity_agreg_talla.xml" value="0.33" />
+        <entry key="..\:/Poyecto_CitrIApp/app/src/main/res/layout/activity_agregar_cul.xml" value="0.25" />
+        <entry key="..\:/Poyecto_CitrIApp/app/src/main/res/layout/activity_cultivo_produ.xml" value="0.33" />
+        <entry key="..\:/Poyecto_CitrIApp/app/src/main/res/layout/activity_cultivos_produccion.xml" value="0.2975630611372381" />
+        <entry key="..\:/Poyecto_CitrIApp/app/src/main/res/layout/activity_login.xml" value="0.2975630611372381" />
+        <entry key="..\:/Poyecto_CitrIApp/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Poyecto_CitrIApp/app/src/main/res/layout/activity_pru.xml" value="0.33" />
+        <entry key="..\:/Poyecto_CitrIApp/app/src/main/res/layout/activity_recom_tratamiento.xml" value="0.2975630611372381" />
+        <entry key="..\:/Poyecto_CitrIApp/app/src/main/res/layout/activity_suggar_ejem.xml" value="0.27787851314596557" />
+        <entry key="..\:/Poyecto_CitrIApp/app/src/main/res/layout/activity_suggar_ejemplo.xml" value="0.27787851314596557" />
+        <entry key="..\:/Proyecto_CitrIApp_Movil/app/src/main/res/layout/activity_agreg_talla.xml" value="0.25" />
+        <entry key="..\:/Proyecto_CitrIApp_Movil/app/src/main/res/layout/activity_agregar_cul.xml" value="0.33" />
+        <entry key="..\:/Proyecto_CitrIApp_Movil/app/src/main/res/layout/activity_cultivo_produ.xml" value="0.25" />
+        <entry key="..\:/Proyecto_CitrIApp_Movil/app/src/main/res/layout/activity_cultivos_produccion.xml" value="0.18" />
+        <entry key="..\:/Proyecto_CitrIApp_Movil/app/src/main/res/layout/activity_list.xml" value="0.1" />
+        <entry key="..\:/Proyecto_CitrIApp_Movil/app/src/main/res/layout/activity_main.xml" value="0.29936594202898553" />
+        <entry key="..\:/Proyecto_CitrIApp_Movil/app/src/main/res/layout/activity_recom_tratamiento.xml" value="0.2776268115942029" />
+        <entry key="..\:/Proyecto_CitrIApp_Movil/app/src/main/res/layout/activity_tratamientos.xml" value="0.2776268115942029" />
+        <entry key="..\:/Sdk/platforms/android-32/data/res/layout/simple_list_item_1.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

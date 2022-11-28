@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="5dp"
+            tools:context=".AgregarCul">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="385dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imgLogo"
+                    android:layout_width="59dp"
+                    android:layout_height="57dp"
+                    app:srcCompat="@drawable/logoredu"
+                    android:contentDescription="TODO" />
+
+                <ImageView
+                    android:id="@+id/imageCitri"
+                    android:layout_width="127dp"
+                    android:layout_height="34dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/citriapp" />
+
+                <LinearLayout
+                    android:layout_width="177dp"
+                    android:layout_height="match_parent"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgOpc"
+                        android:layout_width="29dp"
+                        android:layout_height="23dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/menu" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="112dp"
+                android:layout_height="122dp"
+                android:layout_marginTop="20dp"
+                android:elevation="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                app:srcCompat="@drawable/agregar" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="260dp"
+                android:layout_height="33dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-light"
+                android:text="Agregar nuevo cultivo"
+                android:textColor="@color/blackB"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+
+            <LinearLayout
+                android:id="@+id/card_view"
+                android:layout_width="339dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/styleedttxt"
+                android:orientation="vertical"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                app:layout_constraintVertical_bias="0.0">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="405dp">
+
+
+                    <LinearLayout
+                        android:layout_width="145dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="130dp"
+                            android:layout_height="27dp"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginTop="35dp"
+                            android:fontFamily="sans-serif-light"
+                            android:text="Nombre de cultivo"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="131dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginTop="50dp"
+                            android:fontFamily="sans-serif-light"
+                            android:text="Lugar de siembra"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="124dp"
+                            android:layout_height="29dp"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginTop="50dp"
+                            android:fontFamily="sans-serif-light"
+                            android:text="Tipo de cultivo"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="143dp"
+                            android:layout_height="31dp"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginTop="50dp"
+                            android:fontFamily="sans-serif-light"
+                            android:text="Fecha de cultivo"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="143dp"
+                            android:layout_height="31dp"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginTop="55dp"
+                            android:fontFamily="sans-serif-light"
+                            android:text="Crecimiento inicial"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="185dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <EditText
+                            android:id="@+id/edtTxtNom"
+                            android:layout_width="160dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="30dp"
+                            android:background="@drawable/styleedttxt"
+                            android:ems="10"
+                            android:hint="Nombre"
+                            android:inputType="text"
+                            android:textAlignment="center"
+                            android:textLocale="20dp"
+                            android:textSize="14sp" />
+
+                        <Spinner
+                            android:id="@+id/spnLug"
+                            android:layout_width="160dp"
+                            android:layout_height="48dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="30dp"
+                            android:background="@drawable/styleedttxt"
+                            android:textAlignment="center"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <Spinner
+                            android:id="@+id/spnTip"
+                            android:layout_width="160dp"
+                            android:layout_height="48dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="30dp"
+                            android:background="@drawable/styleedttxt"
+                            android:textAlignment="center"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <EditText
+                            android:id="@+id/edtTxtFech"
+                            android:layout_width="160dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="30dp"
+                            android:background="@drawable/styleedttxt"
+                            android:clickable="false"
+                            android:cursorVisible="false"
+                            android:ems="10"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:hint="   Fecha"
+                            android:inputType="text"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="9dp"
+                            android:orientation="horizontal">
+
+
+                            <EditText
+                                android:id="@+id/edtTalla"
+                                android:layout_width="75dp"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/styleedttxt"
+                                android:hint="Talla"
+                                android:inputType="number"
+                                android:textAlignment="center"
+                                android:textSize="14sp"
+                                tools:ignore="TouchTargetSizeCheck" />
+
+                            <Spinner
+                                android:id="@+id/spnMed"
+                                android:layout_width="75dp"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/styleedttxt"
+                                android:textAlignment="center"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="306dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/styleedtalert"
+                    android:elevation="8dp">
+
+                    <TextView
+                        android:layout_width="169dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="Ten en cuenta que el tipo de cultivo y la ubicación del cultivo es importante para poder predecir una posible fecha de cosecha y para poderte recomendar tratamientos en el transcurso de la producción de tu cultivo de cítricos"
+                        android:textSize="17sp"></TextView>
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="125dp"
+                        android:layout_height="291dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/dibujoalert" />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btnAgregarCu"
+                    android:layout_width="187dp"
+                    android:layout_height="61dp"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="25dp"
+                    android:background="@drawable/stylebotton"
+                    android:text="Agregar"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck">
+
+                </Button>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="48dp"
+                android:layout_height="821dp"
+                app:layout_constraintBottom_toBottomOf="@+id/card_view"
+                app:layout_constraintEnd_toEndOf="@+id/card_view"
+                app:layout_constraintHorizontal_bias="0.150"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/card_view"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/advertencia" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
