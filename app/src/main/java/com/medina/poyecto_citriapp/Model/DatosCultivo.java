@@ -2,8 +2,8 @@ package com.medina.poyecto_citriapp.Model;
 
 public class DatosCultivo {
     Integer id;
-    String name_cultive;
     String citrico_id;
+    String name_cultive;
     String start_production;
     String finca_id;
 

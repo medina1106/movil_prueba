@@ -1,58 +1,79 @@
 package com.medina.poyecto_citriapp;
 
 import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
-import android.widget.EditText;
 import android.widget.TextView;
 
-import com.medina.poyecto_citriapp.AgregarCultivo;
-import com.medina.poyecto_citriapp.CultivosProduccion;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.medina.poyecto_citriapp.Model.DatosCultivo;
+import com.medina.poyecto_citriapp.Model.Pojo_Get_Cultivos;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Adaptador extends BaseAdapter
-{
-     private Context context;
-    private List<DatosCultivo> list;
+public class Adaptador extends RecyclerView.Adapter<Adaptador.ViewHolder> {
+
+    private ArrayList<Pojo_Get_Cultivos> dataset;
+    private Context context;
+
+    public Adaptador(Context context) {
+        this.context = context;
+        dataset = new ArrayList<>();
+
+    }
 
 
-     public Adaptador (Context context , List<DatosCultivo> list){
-         this.context=context;
-         this.list=list;
-     }
-
-
+    @NonNull
     @Override
-    public int getCount() {
-        return list.size();
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_list, parent, false);
+        return new ViewHolder(view);
     }
 
     @Override
-    public Object getItem(int position) {
-        return position;
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+
     }
+
+    @Override
+    public int getItemCount() {
+        return dataset.size();
+    }
+
+    public void adicionarListaCultivo(ArrayList<Pojo_Get_Cultivos> listaCultivo) {
+        dataset.addAll(listaCultivo);
+        notifyDataSetChanged();
+    }
+
 
     @Override
     public long getItemId(int position) {
         return position;
     }
 
-    @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
-        View root = View.inflate(context,R.layout.activity_list,null);
 
-        TextView txttitulo = (TextView) root.findViewById(R.id.txttitulo);
-        TextView txtFec = (TextView)  root.findViewById(R.id.txtFec);
-        TextView txtLugar = (TextView) root.findViewById(R.id.txtLugar);
+    public class ViewHolder extends RecyclerView.ViewHolder {
 
-        txttitulo.setText(list.get(position).getName_cultive());
-        txtFec.setText(list.get(position).getStart_production());
-        txtLugar.setText(list.get(position).getFinca_id());
+        TextView txttitulo;
+        TextView txtFec;
+        TextView txtLugar;
 
-        return root;
+
+        public ViewHolder(@NonNull View itemView) {
+            super(itemView);
+
+            txttitulo = itemView.findViewById(R.id.txttitulo);
+            txtFec = itemView.findViewById(R.id.txtFec);
+            txtLugar = itemView.findViewById(R.id.txtLugar);
+
+
+        }
+
+
+
     }
 }

@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
+import android.nfc.Tag;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -13,13 +15,24 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.medina.poyecto_citriapp.Controller.RetrofitClient;
+import com.medina.poyecto_citriapp.Interfaces.Api_Post_Cultivos;
+import com.medina.poyecto_citriapp.Model.Pojo_Get_Cultivos;
+
 import java.util.Calendar;
 import java.util.UUID;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class AgregarCul extends AppCompatActivity implements View.OnClickListener {
 
      EditText edtTxtFech;
      int ano, mes, dia;
+    private static final String TAG = "MEDINA";
      Calendar calendar;
      Button btnAgregarCu;
      Spinner spnLug,spnTip,spnMed;
@@ -90,7 +103,7 @@ public class AgregarCul extends AppCompatActivity implements View.OnClickListene
          switch (view.getId()){
              case R.id.btnAgregarCu:
                  Intent intent = new Intent(AgregarCul.this,CultivosProduccion.class);
-                 AgregarCultivo();
+                 PostCultivo();
                  startActivity(intent);
                  break;
          }
@@ -98,10 +111,29 @@ public class AgregarCul extends AppCompatActivity implements View.OnClickListene
      }
 
 
-     private void   AgregarCultivo() {
+ private void PostCultivo (){
+
+        Api_Post_Cultivos api_post_cultivos = RetrofitClient.getRetrofitInstance().create(Api_Post_Cultivos.class);
+     Call <Pojo_Get_Cultivos> cultivosCall = api_post_cultivos.PostCultivos("2", "hola soy medina", "11/09/2018","2");
+     cultivosCall.enqueue(new Callback<Pojo_Get_Cultivos>() {
+         @Override
+         public void onResponse(Call<Pojo_Get_Cultivos> call, Response<Pojo_Get_Cultivos> response) {
+           Log.e(TAG,"onResponse:" + response.code() );
+           Log.e(TAG, "OnResponse:" + response.body().getCultivos());
 
 
-     }
+
+
+         }
+
+         @Override
+         public void onFailure(Call<Pojo_Get_Cultivos> call, Throwable t) {
+Log.e(TAG, "Onfailure:" + t.getMessage());
+         }
+     });
+
+
+ }
 
      }
 
